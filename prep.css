@@ -1,0 +1,35 @@
+body {background-color: #;
+		background-image:;
+		background-position:;
+		background-repeat: no-repeat;
+		color: #;
+		font-family: ,sans-serif}
+header {background-color: #;
+		color: #;
+		background-image: url();
+		background-position:;
+		background-repeat: no-repeat;
+		height:;
+		text-align: center;
+		padding-top:;}
+nav {background-color: #;
+		font-weight: bold;
+		text-align: left;
+		padding:;}
+nav a {text-decoration: none}
+main {padding-top:;
+		padding-right:;
+		padding-bottom:;
+		padding-left:;
+		display: block;}
+h1 {margin-bottom: 0;
+	margin-top: 0;
+	font-family: , serif}
+h2 {color: #;
+	font-family: , serif;}
+h3 {font-family: , serif}
+footer {font-size: 60%;
+		font-style: italic;
+		text-align: center;
+		font-family: , serif;
+		padding: 20px;}
