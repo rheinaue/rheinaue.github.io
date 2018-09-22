@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Prep Restaurant</title>
+<title>Prep Co - Locations</title>
 <meta charset="utf-8">
+<meta name="description" content="Prep Co. has several locations
+around the Valley.">
 <link href="prep.css" rel="stylesheet">
 </head>
 <body>
+<img id="sign" src="sign.jpg" alt="restaurant sign" height="100" 
+			width="115">
 <header>
-	<h1>Prep</h1>
+	<h1>Prep Co.</h1>
 </header>
 <nav>
 	<a href="index.html">Home</a> &nbsp;
@@ -18,7 +22,39 @@
 	<a href="order.html">Order Online</a> &nbsp;
 	<a href="contact.html">Contact Us</a>
 </nav>
-
-
+<main>
+	<h2 id="hlocations">Where in the world are we?</h2>
+	<div id="googleMap" style="width:50%; height:400px">
+	</div>
+	<script>
+		function myMap() {
+		var mapProp= {center:new google.maps.LatLng(33.428902, -111.925855),
+		zoom: 5,};
+		var map=new
+		google.maps.Map(document.getElementById("googleMap"),mapProp);}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAkxMNdRTT1oieqvW0A6pOvT1QMR5XsSE&callback=myMap">
+	</script>
+	<div>
+	<table id="locations">
+	<tr>
+		<td>Prep Co. &mdash; Tempe<br>
+		1234 E Broadway Rd <br>
+		Tempe, AZ 85282</td>
+		<td>Prep Co. &mdash; Ahwatukee<br>
+		5284 S Eastman Dr <br>
+		Ahwatukee, AZ 85048</td>
+		<td>Prep Co. &mdash; Phoenix<br>
+		4638 N 52nd St <br>
+		Phoenix, AZ 85028</td>
+	</tr>
+	</table>
+	</div>
+</main>
+	<div id="tag">Prep Co. For Everybody.</div>
+<footer>
+	Copyright &copy; 2018 Prep Co.<br>
+	<a href="mailto:rheinaue@asu.edu">rheinaue@asu.edu</a>
+</footer>
 </body>
 </html>

@@ -1,24 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Prep Restaurant</title>
+<title>Prep Co - Contact Us</title>
 <meta charset="utf-8">
+<meta name="description" content="Contact Prep. Co with any
+questions, comments, concerns, or rave reviews.">
 <link href="prep.css" rel="stylesheet">
 </head>
 <body>
+	<img id="sign" src="sign.jpg" alt="restaurant sign" height="100" 
+			width="115">
 <header>
-	<h1>Prep</h1>
+	<h1>Prep Co.</h1>
 </header>
-<nav>
-	<a href="index.html">Home</a> &nbsp;
-	<a href="howitworks.html">How it Works</a> &nbsp;
-	<a href="menu.html">Menu</a> &nbsp;
-	<a href="nutrition.html">Nutrition Facts</a> &nbsp;
-	<a href="locations.html">Locations</a> &nbsp;
-	<a href="order.html">Order Online</a> &nbsp;
-	<a href="contact.html">Contact Us</a>
-</nav>
-
-
+	<nav>
+		<a href="index.html">Home</a> &nbsp;
+		<a href="howitworks.html">How it Works</a> &nbsp;
+		<a href="menu.html">Menu</a> &nbsp;
+		<a href="nutrition.html">Nutrition Facts</a> &nbsp;
+		<a href="locations.html">Locations</a> &nbsp;
+		<a href="order.html">Order Online</a> &nbsp;
+		<a href="contact.html">Contact Us</a>
+	</nav>
+<main>
+	<div class="right">
+	<img src="envelope.png" alt="envelope" height="300" width="300">
+	</div>
+	<h1 class="contact">Questions? Comments? Concerns? Rave Reviews?</h1>
+	<p class="contact">We'd love to chat!<br><br>
+		Leave us some info below.</p>
+	<form method="get" action="#">
+		<label for="first">First name:<br></label>
+		<input type="text" name="first" id="first"
+		required="required"><br>
+		<label for="last">Last name:<br></label>
+		<input type="text" name="last" id="last"
+		required="required"><br>
+		<label for="message">Message:<br></label>
+		<textarea name="message" id="message" rows="10" cols="60"
+		required="required"></textarea><br><br>
+		<fieldset>
+		<legend>How do you want us to contact you?</legend>
+		<label for="phone">Telephone number:<br></label>
+		<input type="tel" name="phone" id="phone"><br><br>
+		<label for="email">Email:<br></label>
+		<input type="email" name="email" id="email">
+		</fieldset>
+		<input type="submit" value="Submit">
+	</form>
+</main>
+	<div id="tag">Prep Co. For Everybody.</div>
+<footer>
+	Copyright &copy; 2018 Prep Co.<br>
+	<a href="mailto:rheinaue@asu.edu">rheinaue@asu.edu</a>
+</footer>
 </body>
 </html>

@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Prep Restaurant</title>
+<title>Prep Co - Order Online</title>
 <meta charset="utf-8">
+<meta name="description" content="Prep Co. lets customers
+order online.">
 <link href="prep.css" rel="stylesheet">
 </head>
 <body>
-<header>
-	<h1>Prep</h1>
-</header>
-<nav>
-	<a href="index.html">Home</a> &nbsp;
-	<a href="howitworks.html">How it Works</a> &nbsp;
-	<a href="menu.html">Menu</a> &nbsp;
-	<a href="nutrition.html">Nutrition Facts</a> &nbsp;
-	<a href="locations.html">Locations</a> &nbsp;
-	<a href="order.html">Order Online</a> &nbsp;
-	<a href="contact.html">Contact Us</a>
-</nav>
+	<img src="sign.jpg" alt="restaurant sign" height="100" 
+			width="115">
+	<header>
+		<h1>Prep Co.</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a> &nbsp;
+		<a href="howitworks.html">How it Works</a> &nbsp;
+		<a href="menu.html">Menu</a> &nbsp;
+		<a href="nutrition.html">Nutrition Facts</a> &nbsp;
+		<a href="locations.html">Locations</a> &nbsp;
+		<a href="order.html">Order Online</a> &nbsp;
+		<a href="contact.html">Contact Us</a>
+	</nav>
+<main>
+	<div class="right">
+		<img src="chef.jpg" alt="chef" height="300" width="500">
+	</div>
+	<h1>Order online and pick up in restaurant.</h1>
+	<p>It's the same process as the restaurant, except we'll juggle
+		the trays of food for you.</p>
+	<p>All fields are required.</p>
+	<form method="get" action="#">
+		<label for="first">First name:<br></label>
+		<input type="text" name="first" id="first"
+		required="required"><br>
+		<label for="last">Last name:<br></label>
+		<input type="text" name="last" id="last"
+		required="required"><br>
+		<label for="phone">Telephone number:<br></label>
+		<input type="tel" name="phone" id="phone"
+		required="required"><br><br>
+		Order Pickup Location:<br>
+		<input type="radio" name="location" id="l1" value="Tempe" checked>
+		<label for="l1">Tempe</label><br>
+		<input type="radio" name="location" id="l2" value="Ahwatukee" checked>
+		<label for="l2">Ahwatukee</label><br>
+		<input type="radio" name="location" id="l3" value="Phoenix" checked>
+		<label for="l3">Phoenix</label><br><br>
+		<label for="message">Type Your Order Here:<br></label>
+		<textarea name="message" id="message" rows="20" cols="40"
+		required="required">
+		</textarea>
+		</form>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_xclick">
+		<input type="hidden" name="business" value="rheino@outlook.com">
+		<input type="hidden" name="lc" value="US">
+		<input type="hidden" name="item_name" value="My Order">
+		<input type="hidden" name="button_subtype" value="services">
+		<input type="hidden" name="no_note" value="0">
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+</main>
+	<div id="tag">Prep Co. For Everybody.</div>
+<footer>
+	Copyright &copy; 2018 Prep Co.<br>
+	<a href="mailto:rheinaue@asu.edu">rheinaue@asu.edu</a>
 
-
+</footer>
 </body>
 </html>

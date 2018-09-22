@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Prep Co</title>
 <meta charset="utf-8">
+<meta name="description" content="Prep Co., a restaurant specializing
+ in nutrition that provides a meal prep buffet experience
+ for everyone.">
 <link href="prep.css" rel="stylesheet">
 </head>
 <body>
+<img src="sign.jpg" alt="restaurant sign" height="100" 
+	width="115">
 <header>
 	<h1>Prep Co.</h1>
 </header>
@@ -19,10 +24,66 @@
 	<a href="contact.html">Contact Us</a>
 </nav>
 <main>
-
+<!--Slideshow-->
+<div class="slideshow-specials">
+<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="specials-slide.jpg" alt="weekly specials" style="width:100%">
+	<div class="text">Weekly Specials</div>
+</div>
+<div class="mySlides fade">
+	<div class="numbertext2">2 / 3</div>
+	<img src="taco-slide.jpg" alt="Taco Tuesday" style="width:100%">
+	<div class="text">Taco Tuesday</div>
+</div>
+<div class="mySlides fade">
+	<div class="numbertext">3 / 3</div>
+	<img src="sundae-slide.jpg" alt="Sundae Specials" style="width:100%">
+	<div class="text">Sunday, Sundae</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {showSlides(slideIndex += n);}
+function currentSlide(n) {showSlides(slideIndex = n);}
+function showSlides(n) {var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++)
+		{slides [i].style.display = "none";}
+		for (i = 0; i < dots.length; i++)
+		{dots[i].className = dots[i].className.replace
+		(" active", "");}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";}
+</script>
+<!--End Slideshow-->
+	<h2>On a meal plan?</h2>
+	<h2>Counting your calories?</h2>
+	<h2>Just want something good to eat?</h2>
+	<p>Prep Co. is the restaurant experience you've been looking for!
+	Established by people doing all of the above,<br> Prep Co. is a unique
+	buffet experience that allows you the ultimate control over your
+	meal that you deserve. <br><br>
+	Not a strict eater? That's okay! Our food is just downright good
+	&mdash; for everybody. <br><br></p>
+	<p> Prep Co. For Everybody.</p>
 </main>
+<div id="tag">Prep Co. For Everybody.</div>
 <footer>
-	Copyright &copy; 2018 Prep Co.
+	Copyright &copy; 2018 Prep Co.<br>
+		<a href="mailto:rheinaue@asu.edu">rheinaue@asu.edu</a>
 </footer>
 </body>
 </html>

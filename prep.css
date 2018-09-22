@@ -1,35 +1,154 @@
-body {background-color: #;
-		background-image:;
-		background-position:;
-		background-repeat: no-repeat;
-		color: #;
-		font-family: ,sans-serif}
-header {background-color: #;
-		color: #;
-		background-image: url();
-		background-position:;
-		background-repeat: no-repeat;
-		height:;
+body {background-color: #FFFFFF;
+		color: black;
+		font-family: Arial, Helvetica,sans-serif}
+header {background-color: #CCEB9D;
+		color: black;
+		height: 100px;
+		font-family: Georgia, "Times New Roman", serif;
 		text-align: center;
-		padding-top:;}
-nav {background-color: #;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top-left-radius: 90px;
+		border-bottom-left-radius: 90px;
+		margin-left: 130px;}
+img {float: left}
+.right {float: right;
+		padding-top: 100px;
+		padding-right: 30px}
+nav {background-color: white;
 		font-weight: bold;
-		text-align: left;
-		padding:;}
-nav a {text-decoration: none}
-main {padding-top:;
-		padding-right:;
-		padding-bottom:;
-		padding-left:;
-		display: block;}
+		text-align: center;
+		padding: 10px;
+		border-bottom: solid}
+nav a {text-decoration: none;}
+nav a:link {color: #2F4E00}
+nav a:visited {color: #2F4E00}
+nav a:hover {color: #FFFFFF;
+				background-color: #1F1959;}
 h1 {margin-bottom: 0;
 	margin-top: 0;
-	font-family: , serif}
-h2 {color: #;
-	font-family: , serif;}
-h3 {font-family: , serif}
+	padding-top: 30px;
+	font-family: Georgia, "Times New Roman", serif;}
+#hlocations {text-align: center}
+.contact {text-align: center}
+h2 {font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 120%}
+div ul {list-style-type: none;
+		text-align: center;
+		margin: 5px}
+div li {display: inline;}
+div a {padding-left: 10px;
+		padding-right: 10px;}
+main {background-image: url("hat4.png");
+		background-repeat: repeat;
+		background-size: 100px 100px;
+		background-color: #FFFFFF; 
+		float: none}
 footer {font-size: 60%;
 		font-style: italic;
 		text-align: center;
-		font-family: , serif;
-		padding: 20px;}
+		font-family: Georgia, "Times New Roman", serif;}
+video {width: 100%; height: auto; max-width: 750px}
+#tag {font-size: 65%;
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif;
+		padding-top: 20px}
+#googleMap {margin-left: auto; margin-right: auto;
+			margin-top: 20px;}
+/*Slideshow*/
+.slideshow-specials {max-width: 750px;
+						position: relative;
+						margin: auto; }
+.mySlides {display: none;}
+.prev, .next {cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				margin-top: -22px;
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;}
+.next {right: 0;
+		border-radius: 3px 0 0 3px}
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+.text {color: #9DC462;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: relative;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;}
+.numbertext {color: black;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: relative;
+				top: 0;}
+.dot {cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;}
+.active, .dot:hover {background-color: #717171;}
+.fade {-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;}
+@-webkit-keyframes fade { from {opacity: .4}
+							to {opacity: 1}}
+@keyframes fade { from {opacity: .4}
+					to {opacity: 1}}
+
+/*Dropdown Menu*/
+.dropbtn {background-color: #4CAF50;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;}
+.dropdown {position: relative;
+			display: inline-block;}
+.dropdown-content {display: none;
+					position: absolute;
+					background-color: #f1f1f1;
+					min-width: 160px;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					z-index: 1;}
+.dropdown-content a {color: black;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color:#3e8e41;}
+
+/*Nutrition Facts Tables*/
+table {margin: auto; 
+		border: 5px solid black;
+		border-spacing: 0;
+		width: 600px;}
+td, th {border-style: none;
+		padding: 5px;
+		font-family: Arial, sans-serif;}
+caption {font-family: Georgia, "Times New Roman", serif;
+			font-weight: bold;
+			font-size: 1.2em;
+			padding-bottom: 5px;}
+tr:nth-of-type(even) {background-color: #eaeaea;}
+
+/*Locations Table*/
+#locations {border: none;
+			padding-top: 10px;}
+td {text-align: center}
+
+/*Menu*/
+figure {float: left;
+		width: 225px;
+		padding-bottom: 10px;
+		background-color: #EAEAEA;}
+figcaption {text-align: center;}
+.clearleft {clear: left;}
